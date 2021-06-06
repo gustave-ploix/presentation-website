@@ -5,6 +5,7 @@ body
 {
     transition: all 1s ease-in-out;
     opacity: 0;
+    background-color: white;
 }
 
 .visible
@@ -160,6 +161,12 @@ body
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    position: fixed;
+    left: 35px;
+    top: 40%;
+    transform: translateX(-50%) rotate(-90deg);
+    margin-top: 25px;
+
 }
 
 .links
@@ -179,11 +186,14 @@ body
     text-decoration: none;
     margin-top: 25px;
     margin-bottom: 25px;
+    font-size: 1.1em;
+    transition: all 0.1s ease-in-out;
 }
 
-.barreVerticale
+.links a:hover
 {
-    width: 50%;
-    height: 1px;
-    background-color: black;
+    transform: scale(1.1);
 }
+
+/* ______________________________________ */
+
