@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap");
+body {
+  width: 100vw;
+  min-height: 100vh;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  overflow-x: hidden;
+}
+
+.visible {
+  opacity: 1;
+}
+
+#barre {
+  width: 1px;
+  height: 80vh;
+  background-color: black;
+  position: fixed;
+  top: 50%;
+  left: 51%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (max-width: 970px) {
+  #barre {
+    display: none;
+  }
+}
+
+.presentationPage {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.presentationPage .text.left {
+  text-align: right;
+}
+
+.presentationPage .text {
+  width: 389px;
+  height: 720px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 50px;
+  position: relative;
+  bottom: 50px;
+}
+
+.presentationPage .text p {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #423A38;
+}
+
+.presentationPage .text p strong {
+  font-weight: 800;
+  color: black;
+}
+
+.presentationPage .text p span {
+  font-size: 36px;
+}
+
+@media (max-width: 970px) {
+  .presentationPage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 1500px;
+  }
+  .presentationPage .text {
+    width: 90%;
+    height: 50vh;
+  }
+  .presentationPage .text p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 970px) and (max-width: 500px) {
+  .presentationPage {
+    height: 2100px;
+  }
+  .presentationPage .text {
+    height: 800px;
+  }
+  .presentationPage .text p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 970px) and (max-width: 400px) {
+  .presentationPage .text {
+    height: 1000px;
+  }
+  .presentationPage .text p {
+    font-size: 17px;
+  }
+}
+
+section .barreVertical {
+  width: 80vw;
+  height: 1px;
+  background-color: black;
+  margin: auto;
+}
+
+@media (max-width: 350px) {
+  section .barreVertical {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 320px) {
+  section .barreVertical {
+    position: relative;
+    left: 13px;
+  }
+}
+
+section .intro {
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+}
+
+section .intro h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 430px) {
+  section .intro h1 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 350px) {
+  section .intro {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 320px) {
+  section .intro {
+    position: relative;
+    left: 13px;
+  }
+}
+
+section .cards {
+  width: 80vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+}
+
+@media (max-width: 350px) {
+  section .cards {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 320px) {
+  section .cards {
+    position: relative;
+    left: 13px;
+  }
+}
+
+section .cards .card {
+  width: 40%;
+  height: auto;
+  border: 1px solid grey;
+  margin: 50px;
+}
+
+section .cards .card img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1280px) {
+  section .cards .card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  section .cards .card {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+}
+/*# sourceMappingURL=pagePrincipale.css.map */

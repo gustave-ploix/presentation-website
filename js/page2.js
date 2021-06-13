@@ -1,3 +1,3 @@
-const body = document.querySelector('body')
+const body = document.querySelector('body');
 
-window.onload = body.classList.add('visible')
+window.onload = body.classList.add('visible');

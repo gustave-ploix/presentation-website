@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap");
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.blank {
+  opacity: 0;
+}
+
+.cadre {
+  width: 725px;
+  height: 530px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cadre h1 {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 18px;
+  font-size: 48px;
+  font-weight: 100;
+}
+
+.cadre h1 strong {
+  font-weight: 500;
+}
+
+.cadre h2 {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 18px;
+  font-size: 48px;
+  font-weight: 100;
+}
+
+.cadre h2 strong {
+  font-weight: 500;
+}
+
+@media (max-width: 550px) {
+  .cadre {
+    width: 80%;
+    height: 60vh;
+  }
+  .cadre h1 {
+    font-size: 35px;
+  }
+  .cadre h2 {
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=pageAccueil.css.map */
