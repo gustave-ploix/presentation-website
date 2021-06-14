@@ -91,23 +91,24 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 1500px;
+    height: 1000px;
   }
   .presentationPage .text {
     width: 90%;
-    height: 50vh;
+    height: 400px;
   }
   .presentationPage .text p {
+    letter-spacing: 5px;
     font-size: 17px;
   }
 }
 
 @media (max-width: 970px) and (max-width: 500px) {
   .presentationPage {
-    height: 2100px;
+    height: 1000px;
   }
   .presentationPage .text {
-    height: 800px;
+    height: 500px;
   }
   .presentationPage .text p {
     font-size: 17px;
@@ -115,8 +116,11 @@ body {
 }
 
 @media (max-width: 970px) and (max-width: 400px) {
+  .presentationPage {
+    height: 1300px;
+  }
   .presentationPage .text {
-    height: 1000px;
+    height: 500px;
   }
   .presentationPage .text p {
     font-size: 17px;
@@ -133,13 +137,6 @@ section .barreVertical {
 @media (max-width: 350px) {
   section .barreVertical {
     width: 90vw;
-  }
-}
-
-@media (max-width: 320px) {
-  section .barreVertical {
-    position: relative;
-    left: 13px;
   }
 }
 
@@ -170,13 +167,6 @@ section .intro h1 {
   }
 }
 
-@media (max-width: 320px) {
-  section .intro {
-    position: relative;
-    left: 13px;
-  }
-}
-
 section .cards {
   width: 80vw;
   display: -webkit-box;
@@ -193,13 +183,6 @@ section .cards {
 @media (max-width: 350px) {
   section .cards {
     width: 90vw;
-  }
-}
-
-@media (max-width: 320px) {
-  section .cards {
-    position: relative;
-    left: 13px;
   }
 }
 

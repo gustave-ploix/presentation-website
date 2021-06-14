@@ -73,13 +73,14 @@ body {
 
         flex-direction: column;
         align-items: center;
-        height: 1500px;
+        height: 1000px;
 
         .text {
             width: 90%;
-            height: 50vh;
-
+            height: 400px;
+            
             p {
+                letter-spacing: 5px;
                 font-size: 17px;
             }
             
@@ -88,10 +89,10 @@ body {
 
     @media (max-width: 500px) {
 
-        height: 2100px;
+        height: 1000px;
 
         .text {
-            height: 800px;
+            height: 500px;
 
             p {
                 font-size: 17px;
@@ -102,8 +103,10 @@ body {
 
     @media (max-width: 400px) {
 
+        height: 1300px;
+
         .text {
-            height: 1000px;
+            height: 500px;
 
             p {
                 font-size: 17px;
@@ -124,10 +127,6 @@ section {
             width: 90vw;
         }
 
-        @media (max-width: 320px) {
-            position: relative;
-            left: 13px;
-        }
     }
 
     .intro {
@@ -147,10 +146,7 @@ section {
         @media (max-width: 350px) {
             width: 90vw;
         }
-        @media (max-width: 320px) {
-            position: relative;
-            left: 13px;
-        }
+        
     }
 
     .cards {
@@ -166,13 +162,7 @@ section {
             width: 90vw;
             
         }
-        @media (max-width: 320px) {
-            
-            position: relative;
-            left: 13px;
-            
-
-        }
+       
 
         .card {
             width: 40%;
