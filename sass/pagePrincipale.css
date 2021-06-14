@@ -14,7 +14,7 @@ body {
 
 #barre {
   width: 1px;
-  height: 80vh;
+  height: 0%;
   background-color: black;
   position: fixed;
   top: 50%;
@@ -25,7 +25,8 @@ body {
 
 @media (max-width: 970px) {
   #barre {
-    display: none;
+    left: 0%;
+    width: 3px;
   }
 }
 
