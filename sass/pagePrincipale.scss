@@ -26,9 +26,9 @@ body {
     transform: translate(-50%, -50%);
 
 
-    @media (max-width: 970px) {
-        left: 0%;
-        width: 3px;
+    @media (max-width: 1285px) {
+        left: 1%;
+        width: 2px;
         color: $barColor;
     }
 }
