@@ -15,7 +15,7 @@ body {
 #barre {
   width: 1px;
   height: 0%;
-  background-color: black;
+  background-color: #6c757d;
   position: fixed;
   top: 50%;
   left: 51%;
@@ -27,6 +27,7 @@ body {
   #barre {
     left: 0%;
     width: 3px;
+    color: #6c757d;
   }
 }
 
@@ -131,7 +132,7 @@ body {
 section .barreVertical {
   width: 80vw;
   height: 1px;
-  background-color: black;
+  background-color: #6c757d;
   margin: auto;
 }
 
