@@ -165,22 +165,32 @@ section {
             
         }
        
-
-        .card {
+        .cardWithInfos {
             width: 40%;
             height: auto;
-            border: 1px solid grey;
             position: relative;
             margin: 50px;
-            overflow: hidden;
-            
-            img {
+
+            .infos {
                 width: 100%;
                 height: 100%;
-                transition: all 0.1s ease-in-out;
-            }
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                transition: 0.2s ease-in-out all;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
 
-            
+                h1 {
+                    font-family: $font;
+                    color: #478570;
+                    font-weight: 100;
+                }
+            }
 
             @media (max-width: 1280px) {
 
@@ -194,10 +204,63 @@ section {
                 margin-bottom: 50px;
             }
 
+            &:hover .infos {
+                opacity: 1;
+                pointer-events: none;
+            }
+
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+            border: 1px solid grey;
+            overflow: hidden;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                transition: all 0.2s ease-in-out;
+            }
+
+            
+
+            
+
+            
+
 
             &:hover img {
-                filter: blur(15px);
+                filter: blur(10px);
             }
+        }
+
+        .cardPhotos{
+             width: 100%;
+            height: 100%;
+            border: 1px solid grey;
+            overflow: hidden;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                transition: all 0.2s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+        .infos {
+                // border: 1px solid red;
+                z-index: 6;
+                height: 50px;
+                width: 50px;
+
+                h1 {
+                    font-size: 1.6em;
+                }
         }
     }
 
